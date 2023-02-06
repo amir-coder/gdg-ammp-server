@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 #config
-.config
+# .config
 package-lock.json
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -106,3 +106,5 @@ dist
 
 # TernJS port file
 .tern-port
+
+/node_modules
