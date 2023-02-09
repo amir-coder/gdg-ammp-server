@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const authRoute = require('./src/routes/auth.route')
 const userRoute =require('./src/routes/user.route')
+const projectRoute = require('./src/routes/Project.route')
+const eventRoute = require('./src/routes/Event.route')
 
 //middleware
 const cors = require("cors");
@@ -51,6 +53,8 @@ app.use(express.urlencoded({ extended: true }));
 //using routes
 app.use("/user", userRoute);
 app.use("/auth", authRoute);
+app.use("/project", projectRoute);
+app.use("/event", eventRoute);
 
 
 

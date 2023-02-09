@@ -5,7 +5,7 @@ const UserController = require('../controllers/users.controller')
 
 // get all users
 
-router.get('/getallUsers',UserController.getAllUsers)
+router.get('/',UserController.getAllUsers)
 
 
 //get user by id
