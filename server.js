@@ -75,7 +75,8 @@ const APP_HOST = process.env.HOST || "localhost";
 
 
 db.mongoose
-  .connect(`mongodb://localhost:27017/${process.env.DB_NAME}`, {
+  // .connect(`mongodb://localhost:27017/${process.env.DB_NAME}`, {
+  .connect(`mongodb://localhost:27017/ammp_db`, {
     useUnifiedTopology: true,
   })
   .then(() => console.log("Connection established with db",process.env.DB_NAME))
